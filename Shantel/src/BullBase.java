@@ -54,6 +54,7 @@ public class BullBase {
 	        System.out.println("Not South African Identity number ");  
 	    }else {
 	    	System.out.println("South African Identity number Valid");
+	    	Registration();
 	    }
 		
 		System.out.println("Please enter position : ");
@@ -70,6 +71,13 @@ public class BullBase {
 		
 		System.out.println("Please enter code : ");
 		Code=RegM.next();
+		
+		if(Code.length()==4){
+			System.out.println("Valid");
+		}else{
+			System.out.println("Invalid");
+			Registration();
+		}
 		
 		System.out.println("Please enter age : ");
 		Age=RegM.nextInt();
